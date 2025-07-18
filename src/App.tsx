@@ -10,6 +10,8 @@ import {
 } from 'lucide-react';
 import PhotoShowcase from './components/PhotoShowcase';
 import CalendarModal from './components/CalendarModal';
+import Achievements from './components/Achievements';
+import TechStack from './components/TechStack';
 
 function App() {
   const [email, setEmail] = useState('');
@@ -73,7 +75,23 @@ function App() {
       tags: ["React", "Node.js", "Express", "MongoDB", "Media-pipe", "Lang-chain", "Flask"],
       type: "Productivity",
       link: "https://www.linkedin.com/posts/api%2Emarket_fashionfusion-stylemeetstech-virtualtryon-activity-7320373816684093440-VM7Z"
-    }
+    },
+    {
+      title: "Nature Vigil – Environmental Data Pipeline",
+      description: "Dockerized backend system with ML model integration, data processing pipelines, and environmental monitoring APIs. Features automated deployment.",
+      image: "https://raw.githubusercontent.com/Thakurayush124/image/main/Screenshot%202025-06-05%20115659.png",
+      tags: ["React", "Node.js", "Express", "MongoDB", "Docker"],
+      type: "Productivity",
+      link: "https://github.com/Shashwat-Darshan/NatureVigil"
+    },
+    {
+      title: "MedPal – Healthcare Backend System",
+      description: "Environmental Data Pipeline",
+      image: "https://raw.githubusercontent.com/Thakurayush124/image/main/Screenshot%202025-06-05%20115659.png",
+      tags: ["React", "Node.js", "Express", "MongoDB", "JWT","Socket.io"],
+      type: "Productivity",
+      link: "https://github.com/Thakurayush124/MedPal"
+    },
   ];
 
   return (
@@ -128,6 +146,11 @@ function App() {
       </section>
 
       <PhotoShowcase />
+        {/* Achievements & Certifications */}
+      <Achievements />
+
+      {/* Tech Stack */}
+      <TechStack />
 
       {/* Newsletter */}
       <section className="max-w-4xl mx-auto px-6 py-16">
