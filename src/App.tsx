@@ -28,7 +28,7 @@ function App() {
    React.useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Adjust time as needed
+    }, 5000); // Adjust time as needed
     
     return () => clearTimeout(timer);
   }, []);
