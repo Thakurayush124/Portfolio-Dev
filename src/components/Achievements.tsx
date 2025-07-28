@@ -68,7 +68,7 @@ const Achievements: React.FC = () => {
       issuer: "Apna College",
       date: "November2023",
       color: "border-blue-200 bg-blue-50",
-      link: "V"
+      link: "https://www.linkedin.com/in/ayush-thakur-542bb4202/details/certifications/1746290789024/single-media-viewer/?profileId=ACoAADPKfQIBtRlfTmTCDgeTufrsQgFc5eIdpeU"
     },
     {
       icon: <Award className="w-6 h-6" />,
@@ -101,7 +101,31 @@ const Achievements: React.FC = () => {
       date: "2021",
       color: "border-yellow-200 bg-yellow-50",
       link: "https://www.linkedin.com/in/ayush-thakur-542bb4202/details/certifications/1746290986004/single-media-viewer/?profileId=ACoAADPKfQIBtRlfTmTCDgeTufrsQgFc5eIdpeU"
-    }
+    },
+     {
+      icon: <BookOpen className="w-6 h-6" />,
+      title: "TSP Training",
+      issuer: "Microsoft & Edunet",
+      date: "2025",
+      color: "border-orange-200 bg-orange-50",
+      link: "https://drive.google.com/file/d/1drlkrXcB5ThZEy-0NtBCIe1x2axgw_ak/view?usp=sharing"
+    },
+    {
+      icon: <Star className="w-6 h-6" />,
+      title: "Google Analytics",
+      issuer: "Google",
+      date: "2025",
+      color: "border-purple-200 bg-purple-50",
+      link: "https://skillshop.credential.net/9c43363e-a07b-45a9-b844-69adbe032271"
+    },
+    {
+      icon: <Trophy className="w-6 h-6" />,
+      title: "Project Management Skills",
+      issuer: "HP",
+      date: "May 2025",
+      color: "border-gray-200 bg-gray-50",
+      link: "https://www.linkedin.com/in/ayush-thakur-542bb4202/details/certifications/1746290715769/single-media-viewer/?profileId=ACoAADPKfQIBtRlfTmTCDgeTufrsQgFc5eIdpeU"
+    },
   ];
 
   return (
@@ -198,7 +222,7 @@ const Achievements: React.FC = () => {
           </div>
           <div className="w-px h-12 bg-gray-300"></div>
           <div>
-            <div className="text-2xl font-bold text-gray-900">3+</div>
+            <div className="text-2xl font-bold text-gray-900">1+</div>
             <div className="text-sm text-gray-600">Years Experience</div>
           </div>
         </div>

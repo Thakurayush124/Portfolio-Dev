@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import {
   Home,
   Github,
@@ -17,12 +18,20 @@ function App() {
   const [email, setEmail] = useState('');
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [isCalendarOpen, setIsCalendarOpen] = useState(false);
-
+  const [isLoading, setIsLoading] = useState(true);
   const handleSubscribe = (e) => {
     e.preventDefault();
     setIsSubscribed(true);
     setTimeout(() => setIsSubscribed(false), 3000);
   };
+  
+   React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Adjust time as needed
+    
+    return () => clearTimeout(timer);
+  }, []);
 
   const workExperience = [
     {
@@ -79,7 +88,7 @@ function App() {
     {
       title: "Nature Vigil – Environmental Data Pipeline",
       description: "Dockerized backend system with ML model integration, data processing pipelines, and environmental monitoring APIs. Features automated deployment.",
-      image: "https://raw.githubusercontent.com/Thakurayush124/image/main/Screenshot%202025-06-05%20115659.png",
+      image: "https://raw.githubusercontent.com/Thakurayush124/image/main/ChatGPT%20Image%20Jul%2028%2C%202025%2C%2011_20_47%20AM.png",
       tags: ["React", "Node.js", "Express", "MongoDB", "Docker"],
       type: "Productivity",
       link: "https://github.com/Shashwat-Darshan/NatureVigil"
@@ -87,13 +96,25 @@ function App() {
     {
       title: "MedPal – Healthcare Backend System",
       description: "Environmental Data Pipeline",
-      image: "https://raw.githubusercontent.com/Thakurayush124/image/main/Screenshot%202025-06-05%20115659.png",
+      image: "https://raw.githubusercontent.com/Thakurayush124/image/main/ChatGPT%20Image%20Jul%2028%2C%202025%2C%2011_31_58%20AM.png",
       tags: ["React", "Node.js", "Express", "MongoDB", "JWT","Socket.io"],
       type: "Productivity",
       link: "https://github.com/Thakurayush124/MedPal"
     },
   ];
-
+  
+    if (isLoading) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <DotLottieReact
+      src="https://lottie.host/c1de17d6-e098-4276-a413-d907c44eec7d/OnkUGyEHHu.lottie"
+      loop
+      autoplay
+          style={{ width: '300px', height: '300px' }}
+        />
+      </div>
+    );
+  }
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="flex justify-center pt-8 pb-16">
@@ -194,7 +215,7 @@ function App() {
           {projects.map((project, index) => (
             <div key={index} className="bg-white rounded-xl shadow-sm hover:shadow-lg overflow-hidden">
               <div className="p-6">
-                <img src={project.image} alt={project.title} className="w-full h-48 object-cover rounded-lg mb-4" />
+                <img src={project.image} alt={project.title} className="w-full h-48 object-contain rounded-lg mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
                 <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">

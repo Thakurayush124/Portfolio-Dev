@@ -12,9 +12,9 @@ const TechStack: React.FC = () => {
       technologies: [
         { name: 'React', level: 95, color: 'bg-blue-500' },
         { name: 'TypeScript', level: 90, color: 'bg-blue-600' },
-        { name: 'Next.js', level: 85, color: 'bg-gray-800' },
-        { name: 'Tailwind CSS', level: 95, color: 'bg-teal-500' },
-        { name: 'JavaScript', level: 95, color: 'bg-yellow-500' },
+        { name: 'Next.js', level: 65, color: 'bg-gray-800' },
+        { name: 'Tailwind CSS', level: 75, color: 'bg-teal-500' },
+        { name: 'JavaScript', level: 70, color: 'bg-yellow-500' },
         { name: 'HTML/CSS', level: 98, color: 'bg-orange-500' }
       ]
     },
@@ -24,11 +24,11 @@ const TechStack: React.FC = () => {
       color: 'from-green-500 to-emerald-600',
       technologies: [
         { name: 'Node.js', level: 85, color: 'bg-green-600' },
-        { name: 'Python', level: 80, color: 'bg-blue-500' },
+        { name: 'Python', level: 70, color: 'bg-blue-500' },
         { name: 'Express.js', level: 85, color: 'bg-gray-700' },
-        { name: 'PostgreSQL', level: 75, color: 'bg-blue-700' },
+        { name: 'PostgreSQL', level: 65, color: 'bg-blue-700' },
         { name: 'MongoDB', level: 70, color: 'bg-green-500' },
-        { name: 'REST APIs', level: 90, color: 'bg-purple-600' }
+        { name: 'REST APIs', level: 50, color: 'bg-purple-600' }
       ]
     },
     design: {
@@ -37,8 +37,8 @@ const TechStack: React.FC = () => {
       color: 'from-pink-500 to-rose-600',
       technologies: [
         { name: 'Figma', level: 95, color: 'bg-purple-500' },
-        { name: 'Adobe XD', level: 80, color: 'bg-pink-600' },
-        { name: 'Photoshop', level: 75, color: 'bg-blue-600' },
+        { name: 'Adobe XD', level: 40, color: 'bg-pink-600' },
+        { name: 'Photoshop', level: 55, color: 'bg-blue-600' },
         { name: 'UI/UX Design', level: 90, color: 'bg-indigo-500' },
         { name: 'Prototyping', level: 85, color: 'bg-green-500' },
         { name: 'Design Systems', level: 88, color: 'bg-orange-500' }
@@ -116,7 +116,7 @@ const TechStack: React.FC = () => {
           <div className="text-sm text-blue-700">Projects Built</div>
         </div>
         <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
-          <div className="text-2xl font-bold text-green-600 mb-1">3+</div>
+          <div className="text-2xl font-bold text-green-600 mb-1">1+</div>
           <div className="text-sm text-green-700">Years Experience</div>
         </div>
         <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
